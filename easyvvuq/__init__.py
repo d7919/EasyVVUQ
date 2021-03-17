@@ -4,6 +4,7 @@ from . import data_structs
 from .params_specification import ParamsSpecification
 from .campaign import Campaign
 from .campaign_dask import CampaignDask
+from .campaign_qcgpj import CampaignQCGPJ
 from .worker import Worker
 from . import actions
 from . import encoders
