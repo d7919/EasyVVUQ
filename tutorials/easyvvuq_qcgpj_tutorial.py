@@ -2,8 +2,8 @@ import os
 import easyvvuq as uq
 import chaospy as cp
 from easyvvuq.actions.execute_qcgpj import ExecuteQCGPJ
-from easyvvuq.executors.qcgpj.qcgpj import QCGPJ
-from easyvvuq.executors.qcgpj.task_requirements import TaskRequirements
+from easyvvuq.pools.qcgpj.qcgpj import QCGPJ
+from easyvvuq.pools.qcgpj.task_requirements import TaskRequirements
 
 if __name__ == '__main__':
     # Set up a fresh campaign called "coffee_pce"
