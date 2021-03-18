@@ -1,9 +1,6 @@
 import os
 import easyvvuq as uq
 import chaospy as cp
-from easyvvuq.actions.execute_qcgpj import ExecuteQCGPJ
-from easyvvuq.pools.qcgpj.qcgpj import QCGPJ
-from easyvvuq.pools.qcgpj.task_requirements import TaskRequirements
 
 if __name__ == '__main__':
     # Set up a fresh campaign called "coffee_pce"
@@ -49,8 +46,8 @@ if __name__ == '__main__':
     cwd = os.getcwd()
     cmd = f"python3 {cwd}/cooling_model.py cooling_in.json"
 
-    qcgpj_manager = QCGPJ().create_manager()
-    qcgpj_action = ExecuteQCGPJ(qcgpj_manager, cmd, task_requirements=TaskRequirements(cores=1))
+    qcgpj_manager = uq.pools.qcgpj.QCGPJ().create_manager()
+    qcgpj_action = uq.actions.ExecuteQCGPJ(qcgpj_manager, cmd, task_requirements=uq.pools.qcgpj.TaskRequirements(cores=1))
 
     my_campaign.apply_for_each_run_dir(
         qcgpj_action,

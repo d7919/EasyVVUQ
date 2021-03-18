@@ -3,6 +3,7 @@
 
 import os
 import logging
+from . import BaseAction
 
 __copyright__ = """
     Copyright 2021 Bartosz Bosak
@@ -49,7 +50,7 @@ class ActionStatusQCGPJ:
         return True
 
 
-class ExecuteQCGPJ(easyvvuq.actions.BaseAction):
+class ExecuteQCGPJ(BaseAction):
 
     def __init__(self, qcpj_manager, run_cmd, model=None, modules=None, venv=None, task_requirements=None):
         """
