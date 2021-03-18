@@ -1,4 +1,4 @@
-mkdir -P .ipython/profile_default/startup
+mkdir -p .ipython/profile_default/startup
 echo 'import multiprocessing as mp\n\
 mp.set_start_method("spawn", force=True)\n\
 mp.freeze_support()\n'\
