@@ -1,0 +1,4 @@
+echo 'import multiprocessing as mp\n\
+mp.set_start_method("spawn", force=True)\n\
+mp.freeze_support()\n'\
+>> /home/jovyan/.ipython/profile_default/startup/01-mp-spawn.py
