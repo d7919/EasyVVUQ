@@ -20,4 +20,4 @@ kubernetes
 autopep8
 squarify
 dill
-qcg-pilotjob
+git+git://github.com/vecma-project/QCG-PilotJob@develop#egg=qcg-pilotjob
