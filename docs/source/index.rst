@@ -41,7 +41,7 @@ Table of contents
    installation
    concepts
    tutorials
-   
+
 
 Indices and tables
 ==================

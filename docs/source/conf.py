@@ -32,7 +32,7 @@ master_doc = 'index'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc','sphinx.ext.napoleon', 'sphinx.ext.autosectionlabel']
+extensions = ['nbsphinx', 'sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx.ext.autosectionlabel']
 
 autosectionlabel_prefix_document = True
 
@@ -48,6 +48,8 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# Notebook to sphinx configuration:
+nbsphinx_execute = 'never'
 
 # -- Options for HTML output -------------------------------------------------
 
