@@ -14,6 +14,7 @@ Subpackages
    easyvvuq.db
    easyvvuq.decoders
    easyvvuq.encoders
+   easyvvuq.pools
    easyvvuq.sampling
    easyvvuq.utils
 
@@ -40,6 +41,14 @@ easyvvuq.campaign\_dask module
 ------------------------------
 
 .. automodule:: easyvvuq.campaign_dask
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+easyvvuq.campaign\_qcgpj module
+------------------------------
+
+.. automodule:: easyvvuq.campaign_qcgpj
    :members:
    :undoc-members:
    :show-inheritance:
