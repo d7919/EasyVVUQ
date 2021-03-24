@@ -1,2 +1,3 @@
 easyvvuq
 nbsphinx
+sphinxcontrib-svg2pdfconverter
