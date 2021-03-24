@@ -33,7 +33,6 @@ master_doc = 'index'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['nbsphinx',
-              'sphinxcontrib.rsvgconverter',
               'sphinx.ext.autodoc',
               'sphinx.ext.napoleon',
               'sphinx.ext.autosectionlabel']
